@@ -21,7 +21,7 @@
     ".": "./dist/index.js",
     "./package.json": "./package.json",
     "./react": "./dist/react/index.js",
-    "./svelte": "./dist/svelte/index.js",
+    "./svelte": "./dist/svelte/index.svelte.js",
     "./vue": "./dist/vue/index.js"
   },
   "main": "./dist/core.js",
