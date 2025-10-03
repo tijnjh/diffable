@@ -12,6 +12,7 @@
     "patch",
     "typescript"
   ],
+  "repository": "https://github.com/tijnjh/diffable",
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
