@@ -1,0 +1,43 @@
+{
+  "name": "diffable",
+  "version": "0.1.1",
+  "description": "reactive object diffing",
+  "keywords": [
+    "diff",
+    "react",
+    "svelte",
+    "vue",
+    "state",
+    "mutable",
+    "patch",
+    "typescript"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json",
+    "./react": "./dist/react/index.js",
+    "./svelte": "./dist/svelte/index.js",
+    "./vue": "./dist/vue/index.js"
+  },
+  "main": "./dist/core.js",
+  "module": "./dist/core.js",
+  "types": "./dist/core.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "svelte": "^5.39.8",
+    "vue": "^3.5.22"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "tsdown": "latest",
+    "typescript": "^5.9.3"
+  }
+}
