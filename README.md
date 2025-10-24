@@ -33,23 +33,23 @@ npm i diffable
 
 ```svelte
 <script lang="ts">
-  import { diffable } from "diffable";
+  import { diffable } from "diffable/svelte";
 
-  const { draft, modified } = diffable({
+  const form = diffable({
     name: "John",
     age: 30,
   });
 </script>
 
-<input bind:value={draft.name} />
-<input bind:value={draft.age} type="number" />
+<input bind:value={form.draft.name} />
+<input bind:value={form.draft.age} type="number" />
 ```
 
 ### vue
 
 ```vue
 <script setup>
-import { diffable } from "diffable";
+import { diffable } from "diffable/vue";
 
 const { draft, modified } = diffable({
   name: "John",
@@ -70,7 +70,7 @@ const { draft, modified } = diffable({
 i know this isnt ideal, i am working on a better api for react
 
 ```tsx
-import { diffable } from "diffable";
+import { diffable } from "diffable/react";
 
 function App() {
   const { draft, setDraft, modified } = diffable({
